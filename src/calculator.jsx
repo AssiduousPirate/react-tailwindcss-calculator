@@ -42,7 +42,7 @@ export default class Calculator extends React.Component{
             <>
                 <div>
                     <div className="bg-slate-50 rounded-md p-3 shadow-lg">
-                        <input type="text" className="text-3xl text-right h-16 w-80 pr-4 bg-white border-none rounded-lg shadow-md mb-4 pointer-events-none" value={output} readonly /><br />
+                        <input type="text" className="text-3xl text-right h-16 w-80 pr-4 bg-white border-none rounded-lg shadow-md mb-4 pointer-events-none" value={output.toLocaleString('en-US')} readonly /><br />
 
                         <button className="w-16 h-16 text-lg m-2 rounded-md shadow-md bg-white text-gray-600 focus:outline-none hover:bg-gray-100 active:shadow-none" onClick={() => this.addDigit(1)}>1</button>
                         <button className="w-16 h-16 text-lg m-2 rounded-md shadow-md bg-white text-gray-600 focus:outline-none hover:bg-gray-100 active:shadow-none" onClick={() => this.addDigit(2)}>2</button>
