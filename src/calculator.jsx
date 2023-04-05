@@ -9,7 +9,7 @@ export default class Calculator extends React.Component{
     }
     addDigit = (digit) => {
         this.setState((prevState) => ({
-            output: eval(prevState.output + digit).toLocaleString('en-US', {style: 'currency', currency: 'USD'}),
+            output: prevState.output + digit,
         }))
     }
   
